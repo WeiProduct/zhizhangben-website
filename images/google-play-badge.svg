@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="53.333" viewBox="0 0 180 53.333">
+  <g id="google-play-badge" transform="translate(0 0)">
+    <rect width="180" height="53.333" rx="5" fill="#000"/>
+    <text transform="translate(90 20)" fill="#fff" font-size="12" font-family="Roboto" text-anchor="middle">
+      <tspan x="0" y="0">即将在</tspan>
+    </text>
+    <text transform="translate(90 35)" fill="#fff" font-size="16" font-family="Roboto" font-weight="500" text-anchor="middle">
+      <tspan x="0" y="0">Google Play</tspan>
+    </text>
+  </g>
+</svg>
