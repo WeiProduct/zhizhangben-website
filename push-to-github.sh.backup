@@ -2,8 +2,10 @@
 
 echo "准备推送网站文件到GitHub..."
 
+# 确保在正确的目录
 cd /Users/weifu/Desktop/记账2/website
 
+# 查看当前状态
 echo "当前Git状态："
 git status
 

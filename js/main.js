@@ -1,4 +1,4 @@
-// 导航栏滚动效果
+
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
@@ -10,7 +10,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// 移动端菜单切换
+
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -19,7 +19,7 @@ navToggle.addEventListener('click', function() {
     navToggle.classList.toggle('active');
 });
 
-// 平滑滚动
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -29,14 +29,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: 'smooth',
                 block: 'start'
             });
-            // 关闭移动端菜单
+            
             navMenu.classList.remove('active');
             navToggle.classList.remove('active');
         }
     });
 });
 
-// 动画效果
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -50,12 +50,12 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// 观察所有需要动画的元素
+
 document.querySelectorAll('.feature-card, .stat, .screenshot-item').forEach(el => {
     observer.observe(el);
 });
 
-// 截图轮播
+
 const screenshotsSlider = document.querySelector('.screenshots-slider');
 let isDown = false;
 let startX;
@@ -88,7 +88,7 @@ if (screenshotsSlider) {
     });
 }
 
-// 添加CSS动画类
+
 const style = document.createElement('style');
 style.textContent = `
     .animate-in {
@@ -158,18 +158,18 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// 加载占位图片
+
 function createPlaceholderImage(width, height, text) {
     const canvas = document.createElement('canvas');
     canvas.width = width;
     canvas.height = height;
     const ctx = canvas.getContext('2d');
     
-    // 背景
+    
     ctx.fillStyle = '#f0f0f0';
     ctx.fillRect(0, 0, width, height);
     
-    // 文字
+    
     ctx.fillStyle = '#999';
     ctx.font = '20px Arial';
     ctx.textAlign = 'center';
@@ -179,15 +179,15 @@ function createPlaceholderImage(width, height, text) {
     return canvas.toDataURL();
 }
 
-// 设置占位图片
+
 document.addEventListener('DOMContentLoaded', function() {
-    // 主界面模拟图
+    
     const mockupImage = document.querySelector('.mockup-image');
     if (mockupImage && !mockupImage.src) {
         mockupImage.src = createPlaceholderImage(400, 800, '应用界面');
     }
     
-    // 截图占位图
+    
     const screenshots = document.querySelectorAll('.screenshot-item img');
     screenshots.forEach((img, index) => {
         if (!img.src) {

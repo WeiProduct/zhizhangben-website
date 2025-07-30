@@ -1,4 +1,4 @@
-/* 全局样式 */
+
 :root {
     --primary-color: #007AFF;
     --secondary-color: #5AC8FA;
@@ -33,7 +33,7 @@ body {
     padding: 0 20px;
 }
 
-/* 导航栏 */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -103,7 +103,7 @@ body {
     border-radius: 3px;
 }
 
-/* 主横幅 */
+
 .hero {
     padding: 120px 0 80px;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -216,7 +216,7 @@ body {
     filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.2));
 }
 
-/* 功能特色 */
+
 .features {
     padding: 80px 0;
     background: var(--white);
@@ -285,7 +285,7 @@ body {
     line-height: 1.8;
 }
 
-/* AI分析部分 */
+
 .ai-section {
     padding: 80px 0;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -378,7 +378,7 @@ body {
     left: 0;
 }
 
-/* 应用截图 */
+
 .screenshots {
     padding: 80px 0;
     background: var(--light-gray);
@@ -416,7 +416,7 @@ body {
     color: var(--dark-color);
 }
 
-/* 下载区域 */
+
 .download {
     padding: 80px 0;
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
@@ -476,7 +476,7 @@ body {
     opacity: 0.8;
 }
 
-/* 页脚 */
+
 .footer {
     background: var(--dark-color);
     color: var(--white);
@@ -533,7 +533,7 @@ body {
     opacity: 0.6;
 }
 
-/* 响应式设计 */
+
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
@@ -600,9 +600,9 @@ body {
         padding: 0.75rem 1.5rem;
         font-size: 0.9rem;
     }
-}/* 添加到style.css的额外样式 */
+}
 
-/* 禁用的下载按钮样式 */
+
 .download-btn.disabled {
     position: relative;
     display: inline-block;
