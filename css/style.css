@@ -630,3 +630,29 @@ body {
     font-weight: 600;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+/* QR Code Styles */
+.download-qr {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.qr-code-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.download-qr p {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .qr-code-img {
+        width: 150px;
+        height: 150px;
+    }
+}
